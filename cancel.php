@@ -11,7 +11,7 @@ if(!empty($_GET['id_zayavki'])){
         $result5 = $mysqli->query($sql);
 
     }    
-    /* header('Location: zayavka_administrator.php'); */
+    header('Location: zayavka_administrator.php');
 }
 ?>
 <div class="container" style="margin-top: 20px">
