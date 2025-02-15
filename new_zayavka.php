@@ -16,6 +16,7 @@ if(!empty($_POST)){
     if(move_uploaded_file($_FILES['userfile']['tmp_name'], $file)){
         $sql = "update zayavki set img_issue = '$file' where id_zayavki = $insertid";
         $result2 = $mysqli->query($sql);
+        Header("Location: zayavka_customer.php");
     }
 }
 ?>
