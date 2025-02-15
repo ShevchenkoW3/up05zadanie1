@@ -9,9 +9,9 @@ if(!empty($_GET['id_zayavki'])){
         $sql = "update zayavki set status = 3, reason_cancel = '$reason_cancel' where id_zayavki = $id_zayavki";
         var_dump($sql);
         $result5 = $mysqli->query($sql);
+        header('Location: zayavka_administrator.php');
 
     }    
-    header('Location: zayavka_administrator.php');
 }
 ?>
 <div class="container" style="margin-top: 20px">
